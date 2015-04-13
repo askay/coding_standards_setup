@@ -16,11 +16,15 @@ Here's what will happen:
 1. A copy of .clang-format will be placed at the root of your project.
 2. A git pre-commit hook will be installed if possible. This will check whether any new code complies with the standards. If not, the commit will be blocked.
 
-Optionally, you can apply the style to your entire project. Please do so from a clean branch:
+# How do I style my entire project?
+*PROCEED WITH CAUTION*
+Consider how doing so will affect any other branches in progress. If you’re confident this will cause minimal disruption, from a clean branch:
 
 	[path to]/coding_standards_setup/apply_styles.rb
 
 You can exclude directories by creating a .excludeFromFormatting file at the project root and listing them in the file, one line per directory. If there isn’t a .excludeFromFormatting present, CocoaPods pods will be excluded automatically; delete the entry to reformat them as well. 
+
+See below about dealing with merge conflicts.
 
 # Oh, no, my commit was blocked. Now what?
 
@@ -31,6 +35,11 @@ From the command line, run
 to automatically reformat the text.
 
 If you’re using Xcode, you might consider installing [BBUncrustifyPlug-Xcode][1] or [ClangFormat-Xcode][2] (use [Alcatraz][3]) and setting them up to update your files on saving.
+
+# Oh, no, I applied styles to the whole project and I have  conflicts merging into my other branches. Now what?
+
+*PROCEED WITH CAUTION*
+Resolve the conflicts. If you’re certain that you didn’t make any actual code changes in the branch you’re merging from, you can simply resolving using Mine, and then reapply the styles.
 
 # Dude, what’s up with the Ruby *and* Python?
 Yeah. That. Right.

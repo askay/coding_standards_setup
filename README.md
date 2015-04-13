@@ -6,7 +6,7 @@ Assuming that you have brew installed. If you don't: [what needs to be done]
 
 # Set up
 1. Download this project locally. 
-2. Configure the file clang-format to your liking. Please refer to http://clang.llvm.org/docs/ClangFormatStyleOptions.html for more information on configuring this file.
+2. Configure the file clang-format to your liking. (Note the lack of the period prefix.) Please refer to http://clang.llvm.org/docs/ClangFormatStyleOptions.html for more information on configuring this file. You really ought to do this—my tastes and yours likely diverge.
 3. Then from the project you want to set up:
 
 	[path to]/coding_standards_setup/prep.rb

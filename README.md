@@ -5,20 +5,22 @@ If you want to quickly set up code style standards, particularly with git, this 
 Assuming that you have brew installed. If you don't: [what needs to be done]
 
 # Set up
-Download this project locally. Then from the project you want to set up:
+1. Download this project locally. 
+2. Configure the file clang-format to your liking. Please refer to http://clang.llvm.org/docs/ClangFormatStyleOptions.html for more information on configuring this file.
+3. Then from the project you want to set up:
 
 	[path to]/coding_standards_setup/prep.rb
 
 Here's what will happen:
 
-1. A copy of .clang-format will be placed at the root of your project. Please refer to http://clang.llvm.org/docs/ClangFormatStyleOptions.html for more information on configuring this file
+1. A copy of .clang-format will be placed at the root of your project.
 2. A git pre-commit hook will be installed if possible. This will check whether any new code complies with the standards. If not, the commit will be blocked.
 
 Optionally, you can apply the style to your entire project. Please do so from a clean branch:
 
 	[path to]/coding_standards_setup/apply_styles.rb
 
-You can exclude directories by creating a .excludeFromFormatting file at the project root and listing them in the file, one line per directory. CocoaPods pods will be excluded automatically; delete the entry to reformat them as well. 
+You can exclude directories by creating a .excludeFromFormatting file at the project root and listing them in the file, one line per directory. If there isn’t a .excludeFromFormatting present, CocoaPods pods will be excluded automatically; delete the entry to reformat them as well. 
 
 # Oh, no, my commit was blocked. Now what?
 

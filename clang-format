@@ -10,7 +10,7 @@ PointerBindsToType: false
 SpacesBeforeTrailingComments: 1
 TabWidth: 8
 UseTab: Never
-SpaceBeforeParens: Always
+SpaceBeforeParens: ControlStatements
 SpaceBeforeAssignmentOperators: true
 PointerAlignment: Left
 ObjCSpaceBeforeProtocolList: false
@@ -21,4 +21,6 @@ IndentCaseLabels: false
 BreakBeforeTernaryOperators: true
 AllowShortLoopsOnASingleLine: false
 AllowShortFunctionsOnASingleLine: None
-ColumnLimit: 100
+ColumnLimit: 120
+AlignOperands: true
+BinPackArguments: false

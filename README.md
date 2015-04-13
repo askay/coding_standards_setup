@@ -7,12 +7,15 @@ Assuming that you have brew installed. If you don't: [what needs to be done]
 # Set up
 Download this project locally. Then from the project you want to set up:
 
-[path to ]/coding\_standards\_setup/prep.rb
-
+`\[path to ]/coding\_standards\_setup/prep.rb
+`
 Here's what will happen:
 
 1. A copy of .clang-format will be placed at the root of your project. Please refer to http://clang.llvm.org/docs/ClangFormatStyleOptions.html for more information on configuring this file
 2. A git pre-commit hook will be installed if possible. This will check whether any new code complies with the standards. If not, the commit will be blocked.
+
+Optionally, you can apply the style to your entire project. Please do so from a clean branch:
+	\[path to ]/coding\_standards\_setup/apply_styles.rb
 
 # Oh, no, my commit was blocked. Now what?
 

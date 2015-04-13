@@ -18,6 +18,8 @@ Optionally, you can apply the style to your entire project. Please do so from a 
 
 	[path to]/coding_standards_setup/apply_styles.rb
 
+You can exclude directories by creating a .excludeFromFormatting file at the project root and listing them in the file, one line per directory. CocoaPods pods will be excluded automatically; delete the entry to reformat them as well. 
+
 # Oh, no, my commit was blocked. Now what?
 
 From the command line, run 
